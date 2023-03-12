@@ -1,0 +1,89 @@
+{
+	"name": "StockItemChanges",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sourceDBLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"structure": [
+			{
+				"name": "[WWI Stock Item ID]",
+				"type": "Int64"
+			},
+			{
+				"name": "[Stock Item]",
+				"type": "String"
+			},
+			{
+				"name": "Color",
+				"type": "String"
+			},
+			{
+				"name": "[Selling Package]",
+				"type": "String"
+			},
+			{
+				"name": "[Buying Package]",
+				"type": "String"
+			},
+			{
+				"name": "Brand",
+				"type": "String"
+			},
+			{
+				"name": "Size",
+				"type": "String"
+			},
+			{
+				"name": "[Lead Time Days]",
+				"type": "Int64"
+			},
+			{
+				"name": "[Quantity Per Outer]",
+				"type": "Int32"
+			},
+			{
+				"name": "[Is Chiller Stock]",
+				"type": "Boolean"
+			},
+			{
+				"name": "Barcode",
+				"type": "String"
+			},
+			{
+				"name": "[Tax Rate]",
+				"type": "Decimal"
+			},
+			{
+				"name": "[Unit Price]",
+				"type": "Decimal"
+			},
+			{
+				"name": "[Recommended Retail Price]",
+				"type": "Decimal"
+			},
+			{
+				"name": "[Typical Weight Per Unit]",
+				"type": "Decimal"
+			},
+			{
+				"name": "Photo",
+				"type": "Byte[]"
+			},
+			{
+				"name": "[Valid From]",
+				"type": "DateTime"
+			},
+			{
+				"name": "[Valid To]",
+				"type": "DateTime"
+			}
+		],
+		"typeProperties": {
+			"tableName": "DummyStockItemChanges"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

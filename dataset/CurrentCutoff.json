@@ -1,0 +1,15 @@
+{
+	"name": "CurrentCutoff",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sourceDBLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"typeProperties": {
+			"tableName": "DummyCurrentCutoff"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

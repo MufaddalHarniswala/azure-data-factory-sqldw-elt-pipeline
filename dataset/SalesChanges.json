@@ -1,0 +1,96 @@
+{
+	"name": "SalesChanges",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sourceDBLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"structure": [
+			{
+				"name": "[Invoice Date Key],",
+				"type": "DateTime"
+			},
+			{
+				"name": "[Delivery Date Key]",
+				"type": "DateTime"
+			},
+			{
+				"name": "[WWI Invoice ID]",
+				"type": "Int64"
+			},
+			{
+				"name": "[Description]",
+				"type": "String"
+			},
+			{
+				"name": "Package",
+				"type": "String"
+			},
+			{
+				"name": "Quantity",
+				"type": "Int64"
+			},
+			{
+				"name": "[Unit Price]",
+				"type": "Decimal"
+			},
+			{
+				"name": "[Tax Rate]",
+				"type": "Decimal"
+			},
+			{
+				"name": "[Total Excluding Tax]",
+				"type": "Decimal"
+			},
+			{
+				"name": "[Tax Amount]",
+				"type": "Decimal"
+			},
+			{
+				"name": "Profit",
+				"type": "Decimal"
+			},
+			{
+				"name": "[Total Including Tax]",
+				"type": "Decimal"
+			},
+			{
+				"name": "[Total Dry Items]",
+				"type": "Int64"
+			},
+			{
+				"name": "[Total Chiller Items]",
+				"type": "Int64"
+			},
+			{
+				"name": "[WWI City ID]"
+			},
+			{
+				"name": "[WWI Customer ID]",
+				"type": "Int32"
+			},
+			{
+				"name": "[WWI Bill To Customer ID]",
+				"type": "Int64"
+			},
+			{
+				"name": "[WWI Stock Item ID]",
+				"type": "Int64"
+			},
+			{
+				"name": "[WWI Saleperson ID]",
+				"type": "Int32"
+			},
+			{
+				"name": "[Last Modified When]",
+				"type": "DateTime"
+			}
+		],
+		"typeProperties": {
+			"tableName": "DummySalesChanges"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

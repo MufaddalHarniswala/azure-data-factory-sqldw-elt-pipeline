@@ -1,0 +1,37 @@
+{
+	"name": "StockItemPhotoChanges",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sourceDBLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"structure": [
+			{
+				"name": "[WWI Stock Item ID]",
+				"type": "Int64"
+			},
+			{
+				"name": "[Block ID]",
+				"type": "Int32"
+			},
+			{
+				"name": "Photo",
+				"type": "Byte[]"
+			},
+			{
+				"name": "[Valid From]",
+				"type": "DateTime"
+			},
+			{
+				"name": "[Valid To]",
+				"type": "DateTime"
+			}
+		],
+		"typeProperties": {
+			"tableName": "DummyStockItemPhotoChanges"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

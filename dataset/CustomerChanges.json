@@ -1,0 +1,53 @@
+{
+	"name": "CustomerChanges",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sourceDBLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"structure": [
+			{
+				"name": "WWI Customer ID",
+				"type": "Int32"
+			},
+			{
+				"name": "Customer",
+				"type": "String"
+			},
+			{
+				"name": "Bill To Customer",
+				"type": "String"
+			},
+			{
+				"name": "Category",
+				"type": "String"
+			},
+			{
+				"name": "Buying Group",
+				"type": "String"
+			},
+			{
+				"name": "Primary Contact",
+				"type": "String"
+			},
+			{
+				"name": "Postal Code",
+				"type": "String"
+			},
+			{
+				"name": "Valid From",
+				"type": "DateTime"
+			},
+			{
+				"name": "Valid To",
+				"type": "DateTime"
+			}
+		],
+		"typeProperties": {
+			"tableName": "DummyCustomerChanges"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

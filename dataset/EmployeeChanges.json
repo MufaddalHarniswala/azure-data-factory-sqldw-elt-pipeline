@@ -1,0 +1,45 @@
+{
+	"name": "EmployeeChanges",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sourceDBLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"structure": [
+			{
+				"name": "[WWI Employee ID]",
+				"type": "Int32"
+			},
+			{
+				"name": "Employee",
+				"type": "String"
+			},
+			{
+				"name": "[Preferred Name]",
+				"type": "String"
+			},
+			{
+				"name": "[Is Salesperson]",
+				"type": "Boolean"
+			},
+			{
+				"name": "Photo",
+				"type": "Byte[]"
+			},
+			{
+				"name": "[Valid From]",
+				"type": "DateTime"
+			},
+			{
+				"name": "[Valid To]",
+				"type": "DateTime"
+			}
+		],
+		"typeProperties": {
+			"tableName": "DummyEmployeeChanges"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
